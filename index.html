@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ultimate travel website that does nothing</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#map">Image Map</a></li>
+            <li><a href="#form">Contact Form</a></li>
+            <li><a href="#table">Travel Packages</a></li>
+        </ul>
+    </nav>
+
+    <section id="map">
+        <h2>Explore Destinations</h2>
+        <img src="world-map.jpg" usemap="#worldmap" alt="World Map" />
+        <map name="worldmap">
+            <area target="_blank" alt="Canada" title="Canada" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html" coords="171,219,169,301,270,379,353,384,431,377,475,400,511,418,570,389,628,375,641,350,590,301,581,236,505,176,503,156,531,122,598,75,540,58,471,64,375,80,310,134" shape="poly">
+            <area target="_blank" alt="USA" title="USA" href="https://www.visittheusa.com/" coords="270,383,272,454,323,479,365,488,419,515,479,497,518,521,509,479,540,448,583,392,507,423,427,387,365,385" shape="poly">
+            <area target="_blank" alt="Greenland" title="Greenland" href="https://visitgreenland.com/" coords="607,77,562,115,589,141,634,150,699,297,857,165,820,58,725,45" shape="poly">
+            <area target="_blank" alt="Brazil" title="Brazil" href="https://www.brazilnaturetours.com/" coords="607,648,558,708,609,747,647,800,656,847,726,794,772,704" shape="poly">
+            <area target="_blank" alt="Australia" title="Australia" href="https://www.australia.com/en-us" coords="1676,748,1569,808,1580,877,1692,866,1768,917,1838,857,1802,785,1744,734" shape="poly">
+            <area target="_blank" alt="Europe" title="Europe" href="https://visiteurope.com/en/" coords="1150,203,1251,456,900,452,980,252" shape="poly">
+        </map>
+    </section>
+
+    <section id="form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <fieldset>
+                <legend>Preferred Contact Method:</legend>
+                <input type="radio" id="phone" name="contact" value="phone">
+                <label for="phone">Phone</label>
+                <input type="radio" id="email_contact" name="contact" value="email">
+                <label for="email_contact">Email</label>
+            </fieldset>
+            <br>
+
+            <label for="date">Preferred Travel Date:</label>
+            <input type="date" id="date" name="date">
+            <br>
+
+            <label for="destination">Preferred Destination:</label>
+            <select id="destination" name="destination">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="mexico">Mexico</option>
+                <option value="brazil">Brazil</option>
+                <option value="france">France</option>
+            </select>
+            <br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+            <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <section id="table">
+        <h2>Travel Packages</h2>
+        <table>
+            <caption>Our Exclusive Travel Packages</caption>
+            <colgroup>
+                <col style="background-color: #f2f2f2;">
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Package</th>
+                    <th>Destination</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Adventure</td>
+                    <td>USA</td>
+                    <td>7 Days</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>Canada</td>
+                    <td>10 Days</td>
+                    <td>$1500</td>
+                </tr>
+                <tr>
+                    <td>Relaxation</td>
+                    <td>Mexico</td>
+                    <td>5 Days</td>
+                    <td>$900</td>
+                </tr>
+                <tr>
+                    <td>Culture</td>
+                    <td>Brazil</td>
+                    <td>8 Days</td>
+                    <td>$1300</td>
+                </tr>
+                <tr>
+                    <td>Exploration</td>
+                    <td>France</td>
+                    <td>7 Days</td>
+                    <td>$1400</td>
+                </tr>
+                <tr>
+                    <td>Luxury</td>
+                    <td colspan="2">All Destinations</td>
+                    <td>$2500</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Prices are subject to change based on availability.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Travel Explorer</p>
+    </footer>
+</body>
+</html>
